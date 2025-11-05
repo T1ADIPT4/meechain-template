@@ -14,6 +14,16 @@ interface LeaderboardEntry {
   streak: number
 }
 
+// Helper function to get rank medal
+function getRankMedal(rank: number) {
+  switch (rank) {
+    case 1: return '🥇'
+    case 2: return '🥈'
+    case 3: return '🥉'
+    default: return `#${rank}`
+  }
+}
+
 export default function Leaderboard() {
   const [timeframe, setTimeframe] = useState<'week' | 'month' | 'all'>('all')
   
@@ -121,15 +131,6 @@ export default function Leaderboard() {
   ])
 
   const currentUserRank = 7
-
-  const getRankMedal = (rank: number) => {
-    switch (rank) {
-      case 1: return '🥇'
-      case 2: return '🥈'
-      case 3: return '🥉'
-      default: return `#${rank}`
-    }
-  }
 
   return (
     <div style={{ 
@@ -378,13 +379,4 @@ function PodiumCard({ entry, height }: { entry: LeaderboardEntry, height: string
       </div>
     </div>
   )
-}
-
-function getRankMedal(rank: number) {
-  switch (rank) {
-    case 1: return '🥇'
-    case 2: return '🥈'
-    case 3: return '🥉'
-    default: return `#${rank}`
-  }
 }

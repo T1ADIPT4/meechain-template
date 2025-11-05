@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import MeeBot from '../components/MeeBot'
 import ProgressBar from '../components/ProgressBar'
@@ -348,8 +348,16 @@ export default function Dashboard() {
                 ⚡ Quick Actions
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                <QuickActionButton icon="🎓" label="Academy" />
-                <QuickActionButton icon="🏆" label="Leaderboard" />
+                <Link href="/academy" passHref legacyBehavior>
+                  <a style={{ textDecoration: 'none' }}>
+                    <QuickActionButton icon="🎓" label="Academy" />
+                  </a>
+                </Link>
+                <Link href="/leaderboard" passHref legacyBehavior>
+                  <a style={{ textDecoration: 'none' }}>
+                    <QuickActionButton icon="🏆" label="Leaderboard" />
+                  </a>
+                </Link>
                 <QuickActionButton icon="🎯" label="Quests" />
                 <QuickActionButton icon="💼" label="External Modules" />
               </div>
