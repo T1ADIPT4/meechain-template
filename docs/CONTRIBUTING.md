@@ -52,7 +52,7 @@
 ### 1. Fork และ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/meechain-template.git
+git clone https://github.com/meechain1/meechain-template.git
 cd meechain-template
 ```
 
