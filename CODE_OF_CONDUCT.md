@@ -41,9 +41,9 @@ Code of Conduct นี้ใช้ในพื้นที่ชุมชนท�
 
 กรณีพบพฤติกรรมที่ไม่เหมาะสม, กรุณารายงานไปที่ผู้ดูแลชุมชนที่รับผิดชอบการบังคับใช้ที่:
 
-- **Email**: [conduct@meechain.example.com] (Coming Soon)
+- **Email**: [cmb@meechain.run.place]
 - **GitHub Issues**: [Report via Private Issue]
-- **Discord**: [Contact Moderators]
+- **Discord**: [MeeChain]
 
 All complaints will be reviewed and investigated promptly and fairly.
 
